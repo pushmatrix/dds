@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>DDS - May 6th, 2013</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/print.css" type="text/css" media="print">
+
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Used to fade in a background when a specific slide state is reached -->
+      <div class="state-background"></div>
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+
+        <section>
+          <h1>Hej!</h1>
+        </section>
+
+        <section>
+          <h2>Monday</h2>
+          <h1>Git & HTML</h1>
+        </section>
+
+        <section data-state="light2">
+          <h2>Tuesday</h2>
+          <h1>Jquery & Javascript</h1>
+        </section>
+
+        <section data-state="light3">
+          <h2>Wednesday</h2>
+          <h1>Python Basics</h1>
+        </section>
+
+        <section data-state="light4">
+          <h2>Thursday</h2>
+          <h1>Scraping</h1>
+        </section>
+
+        <section data-state="light5">
+          <h2>Friday</h2>
+          <h1>API<small>s</small></h1>
+        </section>
+
+        <section data-state="pink">
+          <a href="http://startupdna.hyperisland.com" target="_blank"><h1>Startup DNA</h1></a>
+        </section>
+
+        <section>
+          <h1>Questions?</h1>
+        </section>
+
+        <section data-state="pink">
+          <h1>Git</h1>
+          <img src="images/cry.gif">
+        </section>
+
+        <section data-state="white">
+          <img src="images/git-workflow.png"/>
+        </section>
+
+        <section data-state="white">
+          <img src="images/centralized-github-4.png"/>
+        </section>
+
+        <section>
+          <h2>Exercise</h2>
+          <h3><a href="http://pushmatrix.github.com/git-dds">http://pushmatrix.github.com/git-dds</a></h3>
+        </section>
+
+        <section data-state="pink">
+          <h1>The Web</h1>
+          <img src="images/giant-cookie.gif">
+        </section>
+
+        <section data-state="pink">
+          <section><h1>HTML</h1><h2>the content</h2></section>
+          <section><h1><a href="http://www.csszengarden.com/" target="_blank">CSS</a></h1><h2>the style</h2></section>
+          <section><h1>Javascript</h1><h2>the logic</h2></section>
+        </section>
+
+        <section>
+          <h2>Document Object Model (DOM)</h2>
+          <img src="images/dom_tree.gif">
+        </section>
+
+        <section>
+          <h3>Protip</h3>
+          <h2>HTML doesn't care about whitespace.</h2>
+        </section>
+
+        <section>
+          <a href="http://learn.shayhowe.com/html-css/terminology-syntax-intro" target="_blank"><h2>Beginner's</h2><h1> Guide to HTML & CSS</h1></a>
+        </section>
+
+        <section>
+          <h1>Inspecting</h1>
+        </section>
+
+        <section>
+          <h2>The grid</h2>
+          <img src="images/grid1.jpg"/>
+        </section>
+
+        <section>
+          <img src="images/grid2.jpg">
+        </section>
+
+
+        <section data-state="purple">
+          <h1><a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap</a></h1>
+        </section>
+      </div>
+
+
+      <!-- The navigational controls UI -->
+      <aside class="controls">
+        <a class="left" href="#">&#x25C4;</a>
+        <a class="right" href="#">&#x25BA;</a>
+        <a class="up" href="#">&#x25B2;</a>
+        <a class="down" href="#">&#x25BC;</a>
+      </aside>
+
+      <!-- Presentation progress bar -->
+      <div class="progress"><span></span></div>
+
+
+    <script src="lib/js/head.min.js"></script>
+
+    <script>
+      // Scripts that should be loaded before initializing
+      var scripts = [];
+
+      // If the browser doesn't support classList, load a polyfill
+      if( !document.body.classList ) {
+        scripts.push( 'lib/js/classList.js' );
+      }
+
+      // Load markdown parser if there are slides defined using markdown
+      if( document.querySelector( '[data-markdown]' ) ) {
+        scripts.push( 'lib/js/showdown.js' );
+        scripts.push( 'lib/js/data-markdown.js' );
+      }
+
+      scripts.push( 'js/reveal.js' );
+
+      // Load the scripts and, when completed, initialize reveal.js
+      head.js.apply( null, scripts.concat([function() {
+
+        // Fires when a slide with data-state=customevent is activated
+        Reveal.addEventListener( 'customevent', function() {
+          console.log( '"customevent" has fired' );
+        } );
+
+        // Fires each time a new slide is activated
+        Reveal.addEventListener( 'slidechanged', function( event ) {
+          // event.previousSlide, event.currentSlide, event.indexh, event.indexv
+        } );
+
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+          progress: true,
+          history: true,
+          mousewheel: false,
+          rollingLinks: false,
+
+          theme: 'beige', // default/neon/beige
+          transition: 'linear' // default/cube/page/concave/linear(2d)
+        });
+
+      }]));
+
+      // Load highlight.js for syntax highlighting of code samples
+      head.js( 'lib/js/highlight.js', function() {
+        hljs.initHighlightingOnLoad();
+      } );
+    </script>
+
+  </body>
+</html>
