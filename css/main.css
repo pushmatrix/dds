@@ -1070,4 +1070,7 @@ img {
 	max-height: 500px;
 }
 
+.comparison pre {
+	width: 100%;
+}
 

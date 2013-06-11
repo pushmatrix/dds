@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>DDS - May 14th, 2013</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/print.css" type="text/css" media="print">
+
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Used to fade in a background when a specific slide state is reached -->
+      <div class="state-background"></div>
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+
+        <section>
+          <h1>Hej!</h1>
+        </section>
+
+        <section>
+          <h1>Questions?</h1>
+        </section>
+
+        <section data-state="pink">
+          <h1>Python</h1>
+          <img src="images/robin.gif">
+        </section>
+
+        <section data-state="pink">
+          <h2>Python is good for</h2>
+          <section>
+            <h1>Simple scripts</h1>
+          </section>
+          <section>
+            <h1>Scraping</h1>
+          </section>
+          <section>
+            <h1>Data science!</h1>
+          </section>
+          <section>
+            <h1>Complex apps</h1>
+          </section>
+        </section>
+
+
+        <section data-state="pink">
+          <h3>Time for another</h3>
+          <h2>Wizard Protip</h2>
+          <img src="images/zoop.gif">
+        </section>
+
+        <section>
+          <h2 style="text-transform: none">SimpleHTTPServer</h2>
+        </section>
+
+        <section data-state="blackout">
+          <iframe class="youtube-player" type="text/html" width="640" height="385" src="http://www.youtube.com/embed/9CS7j5I6aOc" allowfullscreen frameborder="0">
+          </iframe>
+        </section>
+
+        <section data-state="pink">
+          <h3>(The 15 minute crashcourse)</h3>
+        </section>
+
+        <section data-state="pink">
+          <h3>First: Let's create a python file</h3>
+        </section>
+
+        <section>
+          <h3>Indentation based</h3>
+          <pre><code>rangelist = range(10)
+for number in rangelist:
+    # Check if number is one of
+    # the numbers in the tuple.
+    if number in (3, 4, 7, 9):
+        # "Break" terminates a for without
+        # executing the "else" clause.
+        break
+    else:
+        # "Continue" starts the next iteration
+        # of the loop. It's rather useless here,
+        # as it's the last statement of the loop.
+        continue
+else:
+    # The "else" clause is optional and is
+    # executed only if the loop didn't "break".
+    pass # Do nothing</code></pre>
+        </section>
+
+        <section>
+          <h2>fuck yeah no semicolons!</h2>
+          <h3>or curly braces {}</h3>
+        </section>
+
+        <section class="comparison">
+          <section>
+            <h2>Assigning variables</h2>
+            <h3>Python</h3>
+            <pre><code>name = "Daniel"</code></pre>
+            <h3>JS</h3>
+            <pre><code>name = "Daniel";</code></pre>
+          </section>
+
+          <section>
+            <h2>Strings!</h2>
+            <h4>Python</h4>
+            <pre><code>name = "Daniel"</code></pre>
+            <h4>JS</h4>
+            <pre><code>var name = "Daniel";</code></pre>
+          </section>
+
+          <section>
+            <h2>Numbers!</h2>
+            <h4>Python</h4>
+            <pre><code>x = 132</code></pre>
+            <h4>JS</h4>
+            <pre><code>x = 132;</code></pre>
+          </section>
+
+          <section>
+            <h2>Booleans!</h2>
+            <h4>Python</h4>
+            <pre><code>is_super_cool = True</code></pre>
+            <h4>JS</h4>
+            <pre><code>isSuperCool = true;</code></pre>
+            <h4>Note that python prefers underscores</h4>
+          </section>
+
+          <section>
+            <h2>Representing nothing</h2>
+            <h4>Python</h4>
+            <pre><code>x = None</code></pre>
+            <h4>JS</h4>
+            <pre><code>x = null</code></pre>
+          </section>
+
+          <section data-state="light2">
+            <h2>Comments!</h2>
+            <h4>Python</h4>
+            <pre><code>## This is a comment</code></pre>
+            <h4>JS</h4>
+            <pre><code>// This is a comment</code></pre>
+          </section>
+
+          <section data-state="light2">
+            <h2>Arrays (ummm...lists)</h2>
+            <h4>Python (called a list)</h4>
+            <pre><code>x = [1,2,3,4,5]</code></pre>
+            <h4>JS (called an array)</h4>
+            <pre><code>x = [1,2,3,4,5];</code></pre>
+          </section>
+
+          <section data-state="light3">
+            <h2>Accessing an element in the list</h2>
+            <span>
+              <pre><code>x = [1,2,3,4,5]
+x[0]
+x[1]
+x[2]
+x[3]
+x[4]
+</code></pre>
+            </span>
+          </section>
+
+          <section data-state="light3">
+            <h2>Dictionaries</h2>
+            <span>
+              <h4>Python</h4>
+              <pre><code>daniel = { "age": 25, "name": "Daniel", "nationality": "Canadian" }</code></pre>
+              <h4>JS (called an object)</h4>
+              <pre><code>daniel = { "age": 25, "name": "Daniel", "nationality": "Canadian" };</code></pre>
+            </span>
+          </section>
+
+          <section data-state="light4">
+            <h2>Conditionals</h2>
+            <span>
+              <h4>Python</h4>
+              <pre><code>age = 17
+if age >= 18:
+  print("You can buy snus")
+else:
+  print("You cannot buy snus")</code></pre>
+              <h4>JS</h4>
+              <pre><code>age = 17;
+if (age >= 18) {
+  console.log("You can buy snus");
+} else {
+  console.log("You cannot buy snus");
+}</code></pre>
+            </span>
+          </section>
+
+<section data-state="light4">
+            <h2>Loops</h2>
+            <span>
+              <h4>Python</h4>
+              <pre><code>data = [1,2,3]
+for i in data:
+  print(data)</code></pre>
+              <h4>JS</h4>
+              <pre><code>data = [1,2,3];
+for (i in data) {
+  console.log(i);
+}</code></pre>
+            </span>
+          </section>
+
+          <section>
+            <h2>Functions</h2>
+            <img src="images/hawk.gif">
+          </section>
+
+          <section data-state="light4">
+            <span>
+              <h4>Python</h4>
+              <pre><code>def sayMyName(name):
+  print("My name is " + name)
+
+# calling the function
+sayMyName("Daniel")
+sayMyName("Astrid")
+</code></pre>
+              <h4>JS</h4>
+              <pre><code>function sayMyName(name) {
+  console.log("My name is " + name);
+}
+
+// calling the function
+sayMyName("Daniel");
+sayMyName("Astrid");
+</code></pre>
+            </span>
+          </section>
+
+        </section>
+
+        <section>
+          <h1>Scraping</h1>
+        </section>
+
+      </div>
+
+
+      <!-- The navigational controls UI -->
+      <aside class="controls">
+        <a class="left" href="#">&#x25C4;</a>
+        <a class="right" href="#">&#x25BA;</a>
+        <a class="up" href="#">&#x25B2;</a>
+        <a class="down" href="#">&#x25BC;</a>
+      </aside>
+
+      <!-- Presentation progress bar -->
+      <div class="progress"><span></span></div>
+
+
+    <script src="lib/js/head.min.js"></script>
+
+    <script>
+      // Scripts that should be loaded before initializing
+      var scripts = [];
+
+      // If the browser doesn't support classList, load a polyfill
+      if( !document.body.classList ) {
+        scripts.push( 'lib/js/classList.js' );
+      }
+
+      // Load markdown parser if there are slides defined using markdown
+      if( document.querySelector( '[data-markdown]' ) ) {
+        scripts.push( 'lib/js/showdown.js' );
+        scripts.push( 'lib/js/data-markdown.js' );
+      }
+
+      scripts.push( 'js/reveal.js' );
+
+      // Load the scripts and, when completed, initialize reveal.js
+      head.js.apply( null, scripts.concat([function() {
+
+        // Fires when a slide with data-state=customevent is activated
+        Reveal.addEventListener( 'customevent', function() {
+          console.log( '"customevent" has fired' );
+        } );
+
+        // Fires each time a new slide is activated
+        Reveal.addEventListener( 'slidechanged', function( event ) {
+          // event.previousSlide, event.currentSlide, event.indexh, event.indexv
+        } );
+
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+          progress: true,
+          history: true,
+          mousewheel: false,
+          rollingLinks: false,
+
+          theme: 'beige', // default/neon/beige
+          transition: 'linear' // default/cube/page/concave/linear(2d)
+        });
+
+      }]));
+
+      // Load highlight.js for syntax highlighting of code samples
+      head.js( 'lib/js/highlight.js', function() {
+        hljs.initHighlightingOnLoad();
+      } );
+    </script>
+
+  </body>
+</html>
